@@ -2,4 +2,4 @@ timezone: Australia/Brisbane
 
 collections:
   churches:
-      output: true
+    output: true
