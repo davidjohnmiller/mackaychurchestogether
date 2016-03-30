@@ -1,11 +1,25 @@
 ---
 layout: nil
 ---
-[
-  {% for Church in site.churches %}
-    {
-      "Name"        : "{{ Church.Name }}",
-      "Denomination": "{{ Church.Denomination }}"
-    } {% if forloop.last %}{% else %},{% endif %}
-  {% endfor %}
-] 
+{
+    "type": "FeatureCollection",
+    "features": [
+      {% for Church in site.churches %}
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": {{ Church.Coordinates }}
+            },
+            "properties": {
+                "name": "{{ Church.Name }}",
+                "styleUrl": "#icon-1315",
+                "styleHash": "-271f8113",
+                "Denomination": "{{ Church.Denomination }}",
+                "Leader": "{{ Church.Leader }}",
+                "Service Times": "{{ Church.Service Times }}"
+            }
+        }{% if forloop.last %}{% else %},{% endif %}
+      {% endfor %}
+    ]
+}
