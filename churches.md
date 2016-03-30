@@ -1,4 +1,5 @@
 ---
+
 ---
 # Churches
 {% for Church in site.churches %}
