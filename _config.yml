@@ -1,5 +1,5 @@
 timezone: Australia/Brisbane
 
 collections:
-  - churches:
+  Churches:
       output: true
