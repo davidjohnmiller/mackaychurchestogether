@@ -1,5 +1,6 @@
 ---
-
+layout: default
+title: Churches
 ---
 # Churches
 {% for Church in site.churches %}
