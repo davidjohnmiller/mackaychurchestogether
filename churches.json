@@ -1,12 +1,11 @@
-    ---
-    layout: nil
-    ---
-
-    [
-    {% for Church in site.churches %}
-        {
-          "Name"        : "{{ Church.Name }}",
-          "Denomination": "{{ Church.Denomination }}"
-        } {% if forloop.last %}{% else %},{% endif %}
-    {% endfor %}
-    ] 
+---
+layout: nil
+---
+[
+  {% for Church in site.churches %}
+    {
+      "Name"        : "{{ Church.Name }}",
+      "Denomination": "{{ Church.Denomination }}"
+    } {% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+] 
