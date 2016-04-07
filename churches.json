@@ -9,7 +9,7 @@ layout: nil
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": {{ Church.Coordinates }}
+                "coordinates": [{{ Church.Coordinates.Longitude }}, {{ Church.Coordinates.Latitude }}]
             },
             "properties": {
                 "name": "{{ Church.Name }}",
