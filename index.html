@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,12 +22,14 @@
           <h1>Mackay Churches Together</h1>
         </header>
 
-        <hr>
-
         <section id="main_content">
           <script src="https://embed.github.com/view/geojson/davidjohnmiller/mackaychurchestogether/gh-pages/churches.geojson"></script>
           <script src="https://embed.github.com/view/geojson/davidjohnmiller/mackaychurchestogether/gh-pages/_site/churches.json"></script>
         </section>
+        
+        <section>
+          <div id="mapid" style="height: 50vh;"></div>
+        </Section>
 
         <footer>
           Mackay Churches Together is maintained by <a href="https://github.com/davidjohnmiller">davidjohnmiller</a><br>
@@ -37,4 +40,10 @@
       </div>
     </div>
   </body>
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <script type="text/javascript">
+    var mymap = L.map('mapid').setView([-21.1412, 149.1856], 13);
+    var geojson = new L.GeoJSON.AJAX("http://davidjohnmiller.github.io/mackaychurchestogether/churches.json");
+    L.geoson().addTo(mymap);
+  </script>
 </html>
