@@ -49,6 +49,7 @@
         // Success!
         var mapdata = JSON.parse(request.responseText);
         var maplayer = L.mapbox.featureLayer().setGeoJSON(mapdata).addTo(map);
+        L.geoJson(mapdata, { style: L.mapbox.simplestyle.style }).addTo(map);
       } else {
         // We reached our target server, but it returned an error
       }
