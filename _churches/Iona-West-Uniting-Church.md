@@ -8,5 +8,7 @@ Website: "www.ionawest.org.au"
 Services:
   - "Sunday 6:30am"
   - "Sunday 8:30pm"
-Coordinates: [149.163722, -21.153803, 0]
+Coordinates:
+  Longitude: 149.163722
+  Latitude: -21.153803
 ---
