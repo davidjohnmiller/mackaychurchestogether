@@ -48,7 +48,7 @@
       if (request.status >= 200 && request.status < 400) {
         // Success!
         var mapdata = JSON.parse(request.responseText);
-        L.geoJson(mapdata).addTo(map);
+        L.geoJson(mapdata, { style: L.mapbox.simplestyle.style }).addTo(map);
       } else {
         // We reached our target server, but it returned an error
       }
