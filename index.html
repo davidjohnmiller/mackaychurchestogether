@@ -41,22 +41,13 @@
   <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
   <script type="text/javascript">
     L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRqb2hubWlsbGVyIiwiYSI6ImNpbXFidWJzbTAwZm12N2trOTIxaTl3YXQifQ.JaRYbyll5SlOJ1WqY1G7GQ';
-    var map = L.mapbox.map('map', 'mapbox.streets').setView([-21.1412, 149.1856], 9);
-    var request = new XMLHttpRequest();
-    request.open('GET', 'http://davidjohnmiller.github.io/mackaychurchestogether/churches.json', true);
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400) {
-        // Success!
-        var mapdata = JSON.parse(request.responseText);
-        var maplayer = L.mapbox.featureLayer().setGeoJSON(mapdata).addTo(map);
-        L.geoJson(mapdata, { style: L.mapbox.simplestyle.style }).addTo(map);
-      } else {
-        // We reached our target server, but it returned an error
-      }
-    };
-    request.onerror = function() {
-      // There was a connection error of some sort
-    };
-    request.send();
+    var map = L.mapbox.map('map', 'mapbox.streets')
+      .setView([-21.1412, 149.1856], 9);
+    var featureLayer = L.mapbox.featureLayer()
+      .loadURL('churches.json')
+      .on('ready', function() {
+        map.fitBounds(featureLayer.getBounds());
+      })
+      .addTo(map);
   </script>
 </html>
