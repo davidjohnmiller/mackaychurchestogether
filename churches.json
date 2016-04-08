@@ -12,13 +12,11 @@ layout: nil
                 "coordinates": [{{ Church.Coordinates.Longitude }}, {{ Church.Coordinates.Latitude }}]
             },
             "properties": {
-                "Name": "{{ Church.Name }}",
-                "Denomination": "{{ Church.Denomination }}",
-                "Leader": "{{ Church.Leader }}",
-                "Service Times": "{{ Church.Service Times }}",
-                "marker-size": "large",
+                "marker-color": "#548cba",
                 "marker-symbol": "religious-christian",
-                "marker-color": "#548cba"
+                "marker-size": "large",
+                "title": "{{ Church.Name }}",
+                "description": "{{ Church.Denomination }}"
             }
         }{% if forloop.last %}{% else %},{% endif %}
       {% endfor %}
