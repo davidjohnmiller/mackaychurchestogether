@@ -49,5 +49,11 @@
         map.fitBounds(featureLayer.getBounds());
       })
       .addTo(map);
+    var featureLayer2 = L.mapbox.featureLayer()
+      .loadURL('churches.geojson')
+      .on('ready', function() {
+        map.fitBounds(featureLayer2.getBounds());
+      })
+      .addTo(map);
   </script>
 </html>
