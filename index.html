@@ -13,7 +13,7 @@ title: Mackay Churches Together
     .loadURL('churches.geojson')
     .on('ready', function() {
       map.fitBounds(featureLayer.getBounds());
-      map.maxBounds(featureLayer.getBounds());
+      map.maxBounds = featureLayer.getBounds();
       featureLayer.eachLayer(function(layer) {
       var content = '<strong>' + layer.feature.properties.title + '</strong>'
       + '<br>' + layer.feature.properties.description + '<br>'
