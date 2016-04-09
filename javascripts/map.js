@@ -1,6 +1,6 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRqb2hubWlsbGVyIiwiYSI6ImNpbXFidWJzbTAwZm12N2trOTIxaTl3YXQifQ.JaRYbyll5SlOJ1WqY1G7GQ';
 var map = L.mapbox.map('map', 'mapbox.streets', {
-	minZoom: 12
+	minZoom: 8
 });
 var featureLayer = L.mapbox.featureLayer()
 .loadURL('churches.geojson')
@@ -17,3 +17,4 @@ var featureLayer = L.mapbox.featureLayer()
 })
 .addTo(map)
 });
+map.options.minZoom = map.getZoom();
