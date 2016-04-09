@@ -9,6 +9,6 @@ Services:
   - "Sunday 8:00am"
   - "Wednesday 10:00am"
 Coordinates: 
-  Longitude: 149.18421131550787
-  Latitude: -21.14367298265259
+  Longitude: 149.1864
+  Latitude: -21.143678
 ---
