@@ -4,15 +4,17 @@ var featureLayer = L.mapbox.featureLayer()
 .loadURL('churches.geojson')
 .on('ready', function() {
   map.fitBounds(featureLayer.getBounds());
-  map.setMaxBounds(featureLayer.getBounds());
+  map.setMaxBounds(featureLayer.getBounds(), {
+    paddingTopLeft: [100, 100]
+  });
   map.options.minZoom = map.getZoom();
   featureLayer.eachLayer(function(layer) {
-  var content = '<strong>' + layer.feature.properties.title + '</strong>'
-  + '<br>' + layer.feature.properties.description + '<br>'
-  + '<a href="' + layer.feature.properties.url + '">View details</a>';
-  layer.bindPopup(content, {
-    closeButton: false
-  });
-})
+    var content = '<strong>' + layer.feature.properties.title + '</strong>'
+    + '<br>' + layer.feature.properties.description + '<br>'
+    + '<a href="' + layer.feature.properties.url + '">View details</a>';
+    layer.bindPopup(content, {
+      closeButton: false
+    });
+  })
 .addTo(map)
 });
