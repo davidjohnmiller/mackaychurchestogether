@@ -2,15 +2,35 @@
 layout: default
 title: Churches by Denomination
 ---
-{% assign days = site.churches | group_by: 'services.day' %}
-{% for day in days %}
-## {{ day.name }}
-{% for church in day.items %}
-### {{ church.title}}
+## Sunday
+{% assign churches = site.churches | where: "services.day", "Sunday" %}
+{% for church in churches %}
+### {{ church.title }}
 
 #### Services
 {% for service in church.services %}
 - {{ service }}
 {% endfor %}
+{% endfor %}
+
+## Saturday
+{% assign churches = site.churches | where: "services.day", "Saturday" %}
+{% for church in churches %}
+### {{ church.title }}
+
+#### Services
+{% for service in church.services %}
+- {{ service }}
+{% endfor %}
+{% endfor %}
+
+## Weekday
+{% assign churches = site.churches | where: "services.day", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] %}
+{% for church in churches %}
+### {{ church.title }}
+
+#### Services
+{% for service in church.services %}
+- {{ service }}
 {% endfor %}
 {% endfor %}
