@@ -13,7 +13,6 @@ services:
   - "Sunday 9:00am"
   - "Tuesday 9:30am"
 office-hours:
-  - "By appointment"
 coordinates: 
   longitude: 149.18204939999998
   latitude: -21.0921182

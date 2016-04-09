@@ -12,7 +12,6 @@ website: ""
 services:
   - ""
 office-hours:
-  - "By appointment"
 coordinates: 
   longitude: 149.16283610000005
   latitude: -21.1582395
