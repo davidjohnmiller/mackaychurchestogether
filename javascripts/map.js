@@ -15,4 +15,4 @@ var featureLayer = L.mapbox.featureLayer()
 })
 .addTo(map)
 });
-map.minZoom = map.getZoom();
+map.options.minZoom = map.getZoom();
