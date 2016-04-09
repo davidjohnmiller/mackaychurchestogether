@@ -8,7 +8,7 @@ address-hint: ""
 mailing: "PO Box 607 Mackay QLD 4740"
 phone: "07 4957 3557"
 email: "ucamackay@optusnet.com.au"
-website: "http://www.stpaulsmackayunitingchurch.org.au/"
+website: "www.stpaulsmackayunitingchurch.org.au/"
 services:
   - "Sunday 9:15am"
 office-hours:

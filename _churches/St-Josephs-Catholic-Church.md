@@ -8,7 +8,7 @@ address-hint: ""
 mailing: "PO Box 3388 North Mackay QLD 4740"
 phone: "07 4957 4855"
 email: "stjomky@bigpond.com"
-website: "http://www.rok.catholic.net.au/mackay-north.html"
+website: "www.rok.catholic.net.au/mackay-north.html"
 services:
   - "Sunday 9:00am"
   - "Saturday 6:00pm (Vigil)"

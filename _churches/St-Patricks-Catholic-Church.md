@@ -1,5 +1,5 @@
 ---
-title: "St Joseph's Catholic Church"
+title: "St Patrick's Catholic Church"
 denomination: "Catholic"
 leader: "Fr John Fitz-Herbert"
 address: "12 River St"
@@ -8,7 +8,7 @@ address-hint: ""
 mailing: ""
 phone: "07 4951 2434"
 email: ""
-website: "http://www.rok.catholic.net.au/mackay.html"
+website: "www.rok.catholic.net.au/mackay.html"
 services:
   - "Sunday 7:00am"
   - "Sunday 6:00pm"
