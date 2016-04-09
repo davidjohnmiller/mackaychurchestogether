@@ -1,4 +1,7 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGF2aWRqb2hubWlsbGVyIiwiYSI6ImNpbXFidWJzbTAwZm12N2trOTIxaTl3YXQifQ.JaRYbyll5SlOJ1WqY1G7GQ';
+var map = L.mapbox.map('map', 'mapbox.streets', {
+minZoom: 10
+});
 var featureLayer = L.mapbox.featureLayer()
 .loadURL('churches.geojson')
 .on('ready', function() {
@@ -10,11 +13,8 @@ var featureLayer = L.mapbox.featureLayer()
     closeButton: false
   });
 })
+.addTo(map)
 });
 var bounds = featureLayer.getBounds();
-var map = L.mapbox.map('map', 'mapbox.streets', {
-featureLayer: featureLayer,
-maxBounds: bounds,
-minZoom: 10
-});
 map.fitBounds(bounds);
+map.maxBounds = bounds;
