@@ -1,5 +1,5 @@
 ---
-title: "St Pauls Uniting Church"
+title: "St Paul's Uniting Church"
 denomination: "Uniting"
 leader: "Rev Dr Julia Pitman"
 address: "21 Macalister St"
