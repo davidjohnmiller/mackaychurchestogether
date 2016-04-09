@@ -4,6 +4,9 @@ collections:
   churches:
     output: true
 
+branch: gh-pages
+
 gems:
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
