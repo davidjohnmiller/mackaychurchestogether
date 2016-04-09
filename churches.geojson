@@ -15,7 +15,8 @@ layout: nil
                 "marker-symbol": "religious-christian",
                 "marker-size": "large",
                 "title": "{{ church.title }}",
-                "description": "{{ church.denomination }}"
+                "description": "{{ church.denomination }}",
+                "url": "{{ church.url }}"
             }
         }{% if forloop.last %}{% else %},{% endif %}
       {% endfor %}
