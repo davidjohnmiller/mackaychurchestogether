@@ -4,19 +4,18 @@ layout: nil
 {
     "type": "FeatureCollection",
     "features": [
-      {% for Church in site.churches %}
+      {% for church in site.churches %}
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [{{ Church.Coordinates.Longitude }}, {{ Church.Coordinates.Latitude }}]
+                "coordinates": [{{ church.coordinates.longitude }}, {{ church.coordinates.latitude }}]
             },
             "properties": {
-                "marker-color": "#548cba",
                 "marker-symbol": "religious-christian",
                 "marker-size": "large",
-                "title": "{{ Church.Name }}",
-                "description": "{{ Church.Denomination }}"
+                "title": "{{ church.tame }}",
+                "description": "{{ church.denomination }}"
             }
         }{% if forloop.last %}{% else %},{% endif %}
       {% endfor %}

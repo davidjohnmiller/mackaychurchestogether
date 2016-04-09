@@ -1,19 +1,19 @@
 ---
-Title: "Mackay Christian Family Church"
-Denomination: "Australian Christian Churches"
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Mackay Christian Family Church"
+denomination: "Australian Christian Churches"
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.17554199999995
-  Latitude: -21.113912
+coordinates: 
+  longitude: 149.17554199999995
+  latitude: -21.113912
 ---

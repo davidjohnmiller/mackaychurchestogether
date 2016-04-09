@@ -1,19 +1,19 @@
 ---
-Title: "Armitage Uniting Church"
-Denomination: "Uniting"
-Leader: "Rev Dr Julia Pitman"
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Armitage Uniting Church"
+denomination: "Uniting"
+leader: "Rev Dr Julia Pitman"
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - "Sunday 7:45am"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.190743
-  Latitude: -21.152327
+coordinates: 
+  longitude: 149.190743
+  latitude: -21.152327
 ---

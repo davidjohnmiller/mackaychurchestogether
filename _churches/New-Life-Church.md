@@ -1,19 +1,19 @@
 ---
-Title: "New Life Church"
-Denomination: "Australian Christian Churches"
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "New Life Church"
+denomination: "Australian Christian Churches"
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18519249999997
-  Latitude: -21.1230235
+coordinates: 
+  longitude: 149.18519249999997
+  latitude: -21.1230235
 ---

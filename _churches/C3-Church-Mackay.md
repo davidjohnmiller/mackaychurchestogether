@@ -1,19 +1,19 @@
 ---
-Title: "C3 Church Mackay"
-Denomination: "C3"
-Leader: "Ps John Gilbank"
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "C3 Church Mackay"
+denomination: "C3"
+leader: "Ps John Gilbank"
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - "Sunday 9:00am"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.19479120000005
-  Latitude: -21.1420479
+coordinates: 
+  longitude: 149.19479120000005
+  latitude: -21.1420479
 ---

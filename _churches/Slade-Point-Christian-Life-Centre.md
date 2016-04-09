@@ -1,19 +1,19 @@
 ---
-Title: "Slade Point Christian Life Centre"
-Denomination: "Australia Christian Churches"
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Slade Point Christian Life Centre"
+denomination: "Australia Christian Churches"
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.21761200000003
-  Latitude: -21.07637
+coordinates: 
+  longitude: 149.21761200000003
+  latitude: -21.07637
 ---

@@ -1,19 +1,19 @@
 ---
-Title: "Salvation Army"
-Denomination: ""
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Salvation Army"
+denomination: ""
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.183767
-  Latitude: -21.143488
+coordinates: 
+  longitude: 149.183767
+  latitude: -21.143488
 ---

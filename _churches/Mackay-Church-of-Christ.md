@@ -1,19 +1,19 @@
 ---
-Title: "Mackay Church of Christ"
-Denomination: ""
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Mackay Church of Christ"
+denomination: ""
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.17402900000002
-  Latitude: -21.109188
+coordinates: 
+  longitude: 149.17402900000002
+  latitude: -21.109188
 ---

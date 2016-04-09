@@ -1,19 +1,19 @@
 ---
-Title: "St Pauls Uniting Church"
-Denomination: "Uniting"
-Leader: "Rev Dr Julia Pitman"
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "St Pauls Uniting Church"
+denomination: "Uniting"
+leader: "Rev Dr Julia Pitman"
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - "Sunday 9:15am"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18386699999996
-  Latitude: -21.141938
+coordinates: 
+  longitude: 149.18386699999996
+  latitude: -21.141938
 ---

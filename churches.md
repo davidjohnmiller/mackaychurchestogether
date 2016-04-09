@@ -2,11 +2,10 @@
 layout: default
 title: Churches
 ---
-# Churches
-{% for Church in site.churches %}
-  ## {{ Church.Name}}
-  ### Services
-  {% for Service in Church.Services %}
-    - {{ Service }}
-  {% endfor %}
+{% for church in site.churches %}
+## {{ church.title}}
+### services
+{% for service in church.services %}
+- {{ service }}
+{% endfor %}
 {% endfor %}

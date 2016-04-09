@@ -1,19 +1,19 @@
 ---
-Title: "St Ambrose Church"
-Denomination: ""
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "St Ambrose Church"
+denomination: ""
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.1804651
-  Latitude: -21.117868
+coordinates: 
+  longitude: 149.1804651
+  latitude: -21.117868
 ---

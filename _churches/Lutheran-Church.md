@@ -1,19 +1,19 @@
 ---
-Title: "Lutheran Church"
-Denomination: ""
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Lutheran Church"
+denomination: ""
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.17977900000005
-  Latitude: -21.143968
+coordinates: 
+  longitude: 149.17977900000005
+  latitude: -21.143968
 ---

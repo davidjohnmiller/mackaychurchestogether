@@ -3,10 +3,60 @@
 
 		<h1>{{ page.title }}</h1>
 		
-		<h2>Service Times</h2>
-		{{ page.services }}
+		<dl>
+			{% if page.denomination <> '' %}
+			<dt>Denomination</dt>
+			<dd>{{ page.denomination }}</dd>
+			{% endif %}
 
-			{{ content }}
+			{% if page.leader <> '' %}
+			<dt>Leader</dt>
+			<dd>{{ page.leader }}</dd>
+			{% endif %}
+
+			{% if page.services <> empty %}
+			<dt>Service Times</dt>
+			<dd>{{ page.services | join: '<br>' }}</dd>
+			{% endif %}
+
+			{% if page.office hours <> empty %}
+			<dt>Office Hours</dt>
+			<dd>{{ page.office hours | join: '<br>' }}</dd>
+			{% endif %}
+		</dl>
+
+		<dl>
+			{% if page.address <> '' %}
+			<dt>Address</dt>
+			<dd>{{ page.address }}, {{ page.suburb }}</dd>
+			{% endif %}
+
+			{% if page.address hint <> '' %}
+			<dd>({{ page.address hint }})</dd>
+			{% endif %}
+
+			{% if page.phone <> '' %}
+			<dt>Phone</dt>
+			<dd>{{ page.phone }}</dd>
+			{% endif %}
+
+			{% if page.mailing <> '' %}
+			<dt>Mailing Address</dt>
+			<dd>{{ page.mailing }}</dd>
+			{% endif %}
+
+			{% if page.email <> '' %}
+			<dt>Email</dt>
+			<dd>{{ page.email }}</dd>
+			{% endif %}
+
+			{% if page.website <> '' %}
+			<dt>Website</dt>
+			<dd>{{ page.website }}</dd>
+			{% endif %}
+		</dl>
+
+		{{ content }}
 
 	</main>
 {% include footer.html %}

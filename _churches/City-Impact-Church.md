@@ -1,19 +1,19 @@
 ---
-Title: "City Impact Church"
-Denomination: ""
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "City Impact Church"
+denomination: ""
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18141500000004
-  Latitude: -21.139428
+coordinates: 
+  longitude: 149.18141500000004
+  latitude: -21.139428
 ---

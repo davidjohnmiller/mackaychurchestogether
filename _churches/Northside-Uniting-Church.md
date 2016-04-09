@@ -1,20 +1,20 @@
 ---
-Title: "Northside Uniting Church"
-Denomination: "Uniting"
-Leader: "Rev Wayne McHugh"
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Northside Uniting Church"
+denomination: "Uniting"
+leader: "Rev Wayne McHugh"
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - "Sunday 9:00am"
   - "Tuesday 9:30am"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18204939999998
-  Latitude: -21.0921182
+coordinates: 
+  longitude: 149.18204939999998
+  latitude: -21.0921182
 ---

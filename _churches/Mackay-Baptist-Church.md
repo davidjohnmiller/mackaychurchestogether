@@ -1,19 +1,19 @@
 ---
-Title: "Mackay Baptist Church"
-Denomination: "Baptist"
-Leader: "Ps Jock Whittaker"
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Mackay Baptist Church"
+denomination: "Baptist"
+leader: "Ps Jock Whittaker"
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - "Sunday 9:00am"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18787380000003
-  Latitude: -21.1474571
+coordinates: 
+  longitude: 149.18787380000003
+  latitude: -21.1474571
 ---

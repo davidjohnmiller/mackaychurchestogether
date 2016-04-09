@@ -1,20 +1,20 @@
 ---
-Title: "Iona West Uniting Church"
-Denomination: "Uniting"
-Leader: "David Jarrott"
-Address: "7 Brooks St"
-Suburb: "West Mackay"
-Address Hint: ""
-Mailing: ""
-Phone: "07 4951 3869"
-Email: ""
-Website: "www.ionawest.org.au"
-Services:
+title: "Iona West Uniting Church"
+denomination: "Uniting"
+leader: "David Jarrott"
+address: "7 Brooks St"
+suburb: "West Mackay"
+address hint: ""
+mailing: ""
+phone: "07 4951 3869"
+email: ""
+website: "www.ionawest.org.au"
+services:
   - "Sunday 6:30am"
   - "Sunday 8:30pm"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates:
-  Longitude: 149.163722
-  Latitude: -21.153803
+coordinates:
+  longitude: 149.163722
+  latitude: -21.153803
 ---

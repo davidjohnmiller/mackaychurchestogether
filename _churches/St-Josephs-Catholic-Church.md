@@ -1,19 +1,19 @@
 ---
-Title: "St Josephs Catholic Church"
-Denomination: "Catholic"
-Leader: ""
-Address: "Grendon St"
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "St Josephs Catholic Church"
+denomination: "Catholic"
+leader: ""
+address: "Grendon St"
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - ""
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18853519999993
-  Latitude: -21.122929
+coordinates: 
+  longitude: 149.18853519999993
+  latitude: -21.122929
 ---

@@ -1,19 +1,19 @@
 ---
-Title: "Scots Presbyterian Church"
-Denomination: "Presbyterian"
-Leader: ""
-Address: ""
-Suburb: ""
-Address Hint: ""
-Mailing: ""
-Phone: ""
-Email: ""
-Website: ""
-Services:
+title: "Scots Presbyterian Church"
+denomination: "Presbyterian"
+leader: ""
+address: ""
+suburb: ""
+address hint: ""
+mailing: ""
+phone: ""
+email: ""
+website: ""
+services:
   - "Sunday 8:30am"
-Office Hours:
+office hours:
   - "By appointment"
-Coordinates: 
-  Longitude: 149.18433300000004
-  Latitude: -21.12200899999999
+coordinates: 
+  longitude: 149.18433300000004
+  latitude: -21.12200899999999
 ---
