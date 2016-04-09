@@ -4,9 +4,7 @@ var featureLayer = L.mapbox.featureLayer()
 .loadURL('churches.geojson')
 .on('ready', function() {
   map.fitBounds(featureLayer.getBounds());
-  map.setMaxBounds(featureLayer.getBounds(), {
-    paddingTopLeft: [100, 100]
-  });
+  map.setMaxBounds(featureLayer.getBounds().pad(50));
   map.options.minZoom = map.getZoom();
   featureLayer.eachLayer(function(layer) {
     var content = '<strong>' + layer.feature.properties.title + '</strong>'
