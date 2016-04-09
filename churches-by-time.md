@@ -3,7 +3,7 @@ layout: default
 title: Churches by Time
 ---
 ## Sunday
-{% assign churches = site.churches | where: "services.time", "Sunday" %}
+{% assign churches = site.churches | where: "services.day", "Sunday" %}
 {% for church in churches %}
 ### {{ church.title }}
 
