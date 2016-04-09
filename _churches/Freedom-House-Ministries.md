@@ -10,8 +10,7 @@ phone: "07 4955 3473"
 email: "admin@fhmmky.org.au"
 website: "www.fhmmky.org.au"
 services:
-  - description: 
-    day: "Sunday"
+  - day: "Sunday"
     time: "9:30am"
 office-hours:
 coordinates:

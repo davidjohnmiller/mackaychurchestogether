@@ -1,6 +1,6 @@
 ---
 title: "Slade Point Christian Life Centre"
-denomination: "Australia Christian Churches"
+denomination: "Australian Christian Churches"
 leader: ""
 address: ""
 suburb: ""

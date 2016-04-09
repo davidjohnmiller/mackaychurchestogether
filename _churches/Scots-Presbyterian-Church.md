@@ -10,8 +10,7 @@ phone: ""
 email: ""
 website: ""
 services:
-  - description: 
-    day: "Sunday"
+  - day: "Sunday"
     time: "8:30am"
 office-hours:
 coordinates: 

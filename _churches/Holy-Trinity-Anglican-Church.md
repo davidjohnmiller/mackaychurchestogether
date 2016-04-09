@@ -10,11 +10,9 @@ phone: "07 4957 3341"
 email: ""
 website: ""
 services:
-  - description: 
-    day: "Sunday"
+  - day: "Sunday"
     time: "8:00am"
-  - description: 
-    day: "Wednesday"
+  - day: "Wednesday"
     time: "10:00am"
 office-hours:
   - "By appointment"

@@ -10,11 +10,9 @@ phone: "07 4951 2434"
 email: ""
 website: "www.rok.catholic.net.au/mackay.html"
 services:
-  - description: 
-    day: "Sunday"
+  - day: "Sunday"
     time: "7:00am"
-  - description: 
-    day: "Sunday"
+  - day: "Sunday"
     time: "6:00pm"
 office-hours:
   - "Monday to Thursday 8:30am to 12:00pm"
