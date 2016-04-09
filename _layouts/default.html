@@ -1,23 +1,11 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.name }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
-    <style type="text/css">
-        body { font-family: sans-serif }
-    </style>
-</head>
+{% include header.html %}
 
-<body>
+    <main>
 
-    <h1> {{ page.title }} </h1>
+    <h1>{{ page.title }}</h1>
 
     {{ content }}
 
-    <hr />
+    </main>
 
-    <a href="{{ site.baseurl }}/">Home</a> | <a href="https://github.com/elliz/jekyll-collection-issue/tree/gh-pages">Source code</a>
-</body>
-</html>
+{% include footer.html %}
