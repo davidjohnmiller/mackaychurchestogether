@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Churches by Denomination
+title: Churches by Time
 ---
 ## Sunday
 {% assign churches = site.churches | where: "services.day", "Sunday" %}

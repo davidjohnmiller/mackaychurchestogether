@@ -9,10 +9,6 @@ title: Churches by Denomination
 ### {{ church.title }}
 
 #### Services
-{% unless church.services == empty %}
-{% for service in church.services %}
-- {{ service.day }} {{ service.time }} ({{ service.description }})
-{% endfor %}
-{% endunless %}
+
 {% endfor %}
 {% endfor %}
