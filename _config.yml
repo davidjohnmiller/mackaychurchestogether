@@ -3,3 +3,7 @@ timezone: Australia/Brisbane
 collections:
   churches:
     output: true
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
