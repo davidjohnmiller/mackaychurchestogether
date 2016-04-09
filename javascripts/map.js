@@ -7,6 +7,7 @@ var featureLayer = L.mapbox.featureLayer()
 .on('ready', function() {
   map.fitBounds(featureLayer.getBounds());
   map.setMaxBounds(featureLayer.getBounds());
+  map.options.minZoom = map.getZoom();
   featureLayer.eachLayer(function(layer) {
   var content = '<strong>' + layer.feature.properties.title + '</strong>'
   + '<br>' + layer.feature.properties.description + '<br>'
@@ -17,4 +18,3 @@ var featureLayer = L.mapbox.featureLayer()
 })
 .addTo(map)
 });
-var initialZoom = map.getZoom();
