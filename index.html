@@ -13,11 +13,10 @@ title: Mackay Churches Together
       map.fitBounds(featureLayer.getBounds());
       featureLayer.eachLayer(function(layer) {
       var content = '<strong>' + layer.feature.properties.title + '</strong>'
-      + '<p>' + layer.feature.properties.description + '</p>'
+      + '<br>' + layer.feature.properties.description + '<br>'
       + '<a href="' + layer.feature.properties.url + '">View details</a>';
       layer.bindPopup(content, {
-        closeButton: false,
-        minWidth: 320
+        closeButton: false
       });
     })
     .addTo(map)
