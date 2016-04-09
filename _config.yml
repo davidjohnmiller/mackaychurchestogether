@@ -1,10 +1,30 @@
+name: Mackay Churches Together
 timezone: Australia/Brisbane
+branch: gh-pages
 
 collections:
   churches:
     output: true
 
-branch: gh-pages
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "churches"
+    values:
+      layout: "church"
 
 gems:
   - jekyll-redirect-from
