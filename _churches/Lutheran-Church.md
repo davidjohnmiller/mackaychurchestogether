@@ -4,14 +4,14 @@ denomination: ""
 leader: ""
 address: ""
 suburb: ""
-address hint: ""
+address-hint: ""
 mailing: ""
 phone: ""
 email: ""
 website: ""
 services:
   - ""
-office hours:
+office-hours:
   - "By appointment"
 coordinates: 
   longitude: 149.17977900000005

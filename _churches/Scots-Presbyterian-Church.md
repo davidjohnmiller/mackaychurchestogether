@@ -4,14 +4,14 @@ denomination: "Presbyterian"
 leader: ""
 address: ""
 suburb: ""
-address hint: ""
+address-hint: ""
 mailing: ""
 phone: ""
 email: ""
 website: ""
 services:
   - "Sunday 8:30am"
-office hours:
+office-hours:
   - "By appointment"
 coordinates: 
   longitude: 149.18433300000004

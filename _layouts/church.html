@@ -19,9 +19,9 @@
 			<dd>{{ page.services | join: '<br>' }}</dd>
 			{% endif %}
 
-			{% if page.office hours <> empty %}
+			{% if page.office-hours <> empty %}
 			<dt>Office Hours</dt>
-			<dd>{{ page.office hours | join: '<br>' }}</dd>
+			<dd>{{ page.office-hours | join: '<br>' }}</dd>
 			{% endif %}
 		</dl>
 
@@ -31,8 +31,8 @@
 			<dd>{{ page.address }}, {{ page.suburb }}</dd>
 			{% endif %}
 
-			{% if page.address hint <> '' %}
-			<dd>({{ page.address hint }})</dd>
+			{% if page.address-hint <> '' %}
+			<dd>({{ page.address-hint }})</dd>
 			{% endif %}
 
 			{% if page.phone <> '' %}

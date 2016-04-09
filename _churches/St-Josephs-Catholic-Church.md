@@ -4,14 +4,14 @@ denomination: "Catholic"
 leader: ""
 address: "Grendon St"
 suburb: ""
-address hint: ""
+address-hint: ""
 mailing: ""
 phone: ""
 email: ""
 website: ""
 services:
   - ""
-office hours:
+office-hours:
   - "By appointment"
 coordinates: 
   longitude: 149.18853519999993

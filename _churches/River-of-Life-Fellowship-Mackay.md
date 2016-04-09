@@ -4,14 +4,14 @@ denomination: "Australian Christian Churches"
 leader: ""
 address: ""
 suburb: ""
-address hint: ""
+address-hint: ""
 mailing: ""
 phone: ""
 email: ""
 website: ""
 services:
   - ""
-office hours:
+office-hours:
   - "By appointment"
 coordinates: 
   longitude: 149.19366100000002

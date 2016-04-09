@@ -4,7 +4,7 @@ denomination: "Uniting"
 leader: "Rev Wayne McHugh"
 address: ""
 suburb: ""
-address hint: ""
+address-hint: ""
 mailing: ""
 phone: ""
 email: ""
@@ -12,7 +12,7 @@ website: ""
 services:
   - "Sunday 9:00am"
   - "Tuesday 9:30am"
-office hours:
+office-hours:
   - "By appointment"
 coordinates: 
   longitude: 149.18204939999998

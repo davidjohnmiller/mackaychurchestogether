@@ -4,14 +4,14 @@ denomination: "Uniting"
 leader: "Rev Dr Julia Pitman"
 address: ""
 suburb: ""
-address hint: ""
+address-hint: ""
 mailing: ""
 phone: ""
 email: ""
 website: ""
 services:
   - "Sunday 7:45am"
-office hours:
+office-hours:
   - "By appointment"
 coordinates: 
   longitude: 149.190743
