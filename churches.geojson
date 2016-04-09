@@ -14,7 +14,7 @@ layout: nil
             "properties": {
                 "marker-symbol": "religious-christian",
                 "marker-size": "large",
-                "title": "{{ church.tame }}",
+                "title": "{{ church.title }}",
                 "description": "{{ church.denomination }}"
             }
         }{% if forloop.last %}{% else %},{% endif %}
