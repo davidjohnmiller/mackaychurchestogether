@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Churches
+title: Churches by Denomination
 ---
 {% assign denominations = site.churches | group_by: 'denomination' %}
 {% for denomination in denominations %}
@@ -11,5 +11,6 @@ title: Churches
 #### Services
 {% for service in church.services %}
 - {{ service }}
+{% endfor %}
 {% endfor %}
 {% endfor %}
