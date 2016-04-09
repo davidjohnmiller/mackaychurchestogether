@@ -13,6 +13,6 @@ title: Churches by Denomination
 {% for service in church.services %}
 - {{ service.day }} {{ service.time }} ({{ service.description }})
 {% endfor %}
-{% endunless }
+{% endunless %}
 {% endfor %}
 {% endfor %}
