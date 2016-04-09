@@ -10,7 +10,9 @@ phone: "07 4957 4807"
 email: "stmarys@mackay.net.au"
 website: "www.rok.catholic.net.au/mackay-south.html"
 services:
-  - "Saturday 6:00pm (Vigil)"
+  - description: "Vigil"
+    day: "Saturday"
+    time: "6:00pm"
 office-hours:
   - "Monday to Friday 9:00am to 12:00pm"
 coordinates: 

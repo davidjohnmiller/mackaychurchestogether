@@ -10,8 +10,12 @@ phone: "07 4957 4855"
 email: "stjomky@bigpond.com"
 website: "www.rok.catholic.net.au/mackay-north.html"
 services:
-  - "Sunday 9:00am"
-  - "Saturday 6:00pm (Vigil)"
+  - description: "Mass"
+    day: "Sunday"
+    time: "9:00am"
+  - description: "Vigil"
+    day: "Saturday"
+    time: "6:00pm"
 office-hours:
   - "Monday to Friday 9:00am to 12:00pm"
 coordinates: 

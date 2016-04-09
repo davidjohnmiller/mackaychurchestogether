@@ -10,7 +10,9 @@ phone: ""
 email: ""
 website: ""
 services:
-  - "Sunday 8:30am"
+  - description: 
+    day: "Sunday"
+    time: "8:30am"
 office-hours:
 coordinates: 
   longitude: 149.18433300000004

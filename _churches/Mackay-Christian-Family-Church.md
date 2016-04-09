@@ -10,7 +10,6 @@ phone: ""
 email: ""
 website: ""
 services:
-  - ""
 office-hours:
 coordinates: 
   longitude: 149.17554199999995

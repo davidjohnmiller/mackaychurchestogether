@@ -1,6 +1,6 @@
 ---
 title: "Salvation Army"
-denomination: ""
+denomination: "Salvation Army"
 leader: ""
 address: ""
 suburb: ""
@@ -10,7 +10,6 @@ phone: ""
 email: ""
 website: ""
 services:
-  - ""
 office-hours:
 coordinates: 
   longitude: 149.183767

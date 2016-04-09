@@ -10,7 +10,9 @@ phone: "07 4957 3557"
 email: "ucamackay@optusnet.com.au"
 website: "www.stpaulsmackayunitingchurch.org.au"
 services:
-  - "Sunday 9:15am"
+  - description: 
+    day: "Sunday"
+    time: "9:15am"
 office-hours:
   - Monday to Friday 9:00am to 12:00pm
 coordinates: 

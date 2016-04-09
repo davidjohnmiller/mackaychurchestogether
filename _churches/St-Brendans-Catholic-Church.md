@@ -10,7 +10,9 @@ phone: "07 4957 4855"
 email: "stjomky@bigpond.com"
 website: "www.rok.catholic.net.au/mackay-north.html"
 services:
-  - "Sunday 7:30am"
+  - description: 
+    day: "Sunday"
+    time: "7:30am"
 office-hours:
 coordinates: 
   longitude: 149.161204

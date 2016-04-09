@@ -1,6 +1,6 @@
 ---
 title: "St Ambrose Church"
-denomination: ""
+denomination: "Anglican"
 leader: ""
 address: ""
 suburb: ""
@@ -10,7 +10,6 @@ phone: ""
 email: ""
 website: ""
 services:
-  - ""
 office-hours:
 coordinates: 
   longitude: 149.1804651

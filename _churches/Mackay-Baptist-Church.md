@@ -10,7 +10,9 @@ phone: "07 4957 3784"
 email: "admin@mackaybaptist.org.au"
 website: "www.mackaybaptist.org.au"
 services:
-  - "Sunday 9:00am"
+  - description: 
+    day: "Sunday"
+    time: "9:00am"
 office-hours:
   - "Monday to Friday 9:00am to 5:00pm"
 coordinates: 

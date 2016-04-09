@@ -1,6 +1,6 @@
 ---
 title: "Lutheran Church"
-denomination: ""
+denomination: "Lutheran"
 leader: ""
 address: ""
 suburb: ""
@@ -10,7 +10,6 @@ phone: ""
 email: ""
 website: ""
 services:
-  - ""
 office-hours:
 coordinates: 
   longitude: 149.17977900000005

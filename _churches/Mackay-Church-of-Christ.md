@@ -1,6 +1,6 @@
 ---
 title: "Mackay Church of Christ"
-denomination: ""
+denomination: "Church of Christ"
 leader: ""
 address: ""
 suburb: ""
@@ -10,7 +10,6 @@ phone: ""
 email: ""
 website: ""
 services:
-  - ""
 office-hours:
 coordinates: 
   longitude: 149.17402900000002
