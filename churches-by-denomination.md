@@ -2,14 +2,18 @@
 layout: default
 title: Churches by Denomination
 ---
-{% assign denominations = site.churches | group_by: "denomination" | sort: "name" %}
+{% assign denominations = site.churches | group_by: "denomination" | sort: "name", "last" %}
 {% for denomination in denominations %}
+{% if denomination.name <> "" %}
 ## {{ denomination.name }}
-{% for church in denomination.items | sort | reverse %}
+{% else %}
+## Other
+{% endif %}
+{% for church in denomination.items %}
 ### {{ church.title }}
 
-#### Services
 {% unless church.services == empty %}
+#### Services
 {% for service in church.services %}
 - {{ service.day }} {{ service.time }} ({{ service.description }})
 {% endfor %}
