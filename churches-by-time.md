@@ -3,14 +3,14 @@ layout: default
 title: Churches by Time
 ---
 ## Sunday
-{% assign churches = site.churches %}
+{% assign churches = site.churches | where: "services.time", "Sunday" %}
 {% for church in churches %}
 ### {{ church.title }}
 
-#### Services
 {% unless church.services == empty %}
+#### Services
 {% for service in church.services %}
-- {{ service.day }} {{ service.time }} ({{ service.description }})
+- {{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}
 {% endfor %}
 {% endunless %}
 {% endfor %}
@@ -20,10 +20,10 @@ title: Churches by Time
 {% for church in churches %}
 ### {{ church.title }}
 
-#### Services
 {% unless church.services == empty %}
+#### Services
 {% for service in church.services %}
-- {{ service.day }} {{ service.time }} ({{ service.description }})
+- {{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}
 {% endfor %}
 {% endunless %}
 {% endfor %}
@@ -33,10 +33,10 @@ title: Churches by Time
 {% for church in churches %}
 ### {{ church.title }}
 
-#### Services
 {% unless church.services == empty %}
+#### Services
 {% for service in church.services %}
-- {{ service.day }} {{ service.time }} ({{ service.description }})
+- {{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}
 {% endfor %}
 {% endunless %}
 {% endfor %}

@@ -14,10 +14,12 @@
 			<dd>{{ page.leader }}</dd>
 			{% endif %}
 
-			{% if page.services <> empty %}
+			{% unless page.services == empty %}
 			<dt>Service Times</dt>
-			<dd>{{ page.services | join: '<br>' }}</dd>
-			{% endif %}
+			{% for service in church.services %}
+			<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
+			{% endfor %}
+			{% endunless %}
 
 			{% if page.office-hours <> empty %}
 			<dt>Office Hours</dt>
