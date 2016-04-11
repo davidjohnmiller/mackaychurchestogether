@@ -29,5 +29,5 @@ title: Churches by Time
 {% for service in services_array %}
   {% unless service contains 'Sunday' %}
     {{ service }}
-  {% endif %}
+  {% endunless %}
 {% endfor %}
