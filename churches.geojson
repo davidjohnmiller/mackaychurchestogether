@@ -15,7 +15,7 @@ layout: nil
                 "marker-symbol": "religious-christian",
                 "marker-size": "large",
                 "title": "{{ church.title }}",
-                "description": "{{ church.services | array_to_sentence_string }}",
+                "description": "{% for service in church.services %}{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}{{% endfor %}",
                 "url": "{{ site.url }}{{ church.url }}"
             }
         }{% unless forloop.last %},{% endunless %}
