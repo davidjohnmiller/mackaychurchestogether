@@ -21,12 +21,13 @@ title: Churches by Time
 {% assign services_array = services_array | sort %}
 ## Sunday
 {% for service in services_array %}
-  {% if service[3] = 'Sunday' %}
-    {{ service[4] }} {{ service[2] }}
+  {% if service contains 'Sunday' %}
+    {{ service }}
   {% endif %}
 {% endfor %}
+## Weekday
 {% for service in services_array %}
-  {% if service[3] != 'Sunday' %}
-    {{ service[4] }} {{ service[2] }}
+  {% unless service contains 'Sunday' %}
+    {{ service }}
   {% endif %}
 {% endfor %}
