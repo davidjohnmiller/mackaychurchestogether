@@ -12,4 +12,4 @@ title: Churches by Time
       {% assign services_array = services_array | push: service_array  %}
   {% endfor %}
 {% endfor %}
-{{ services_array | join: '<br>' }}
+{{ services_array }}
