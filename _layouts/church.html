@@ -16,7 +16,7 @@
 
 			{% unless page.services == empty %}
 			<dt>Service Times</dt>
-			{% for service in church.services %}
+			{% for service in page.services %}
 			<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
 			{% endfor %}
 			{% endunless %}
