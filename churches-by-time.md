@@ -2,10 +2,10 @@
 layout: default
 title: Churches by Time
 ---
-## Sunday
+{% assign array = empty %}
 {% for church in site.churches %}
 {% for service in church.services %}
-{{ array | push: [church.title, service.description, service.day, service.time]}}
+{{ array | push: church.title }}
 {% end for %}
 {% end for %}
 {{ array }}
