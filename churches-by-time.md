@@ -22,7 +22,7 @@ title: Churches by Time
 ## Sunday
 {% for service in services_array %}
   {% if service contains 'Sunday' %}
-    {{ service }}
+    {{ service | join: '<br>' }}
   {% endif %}
 {% endfor %}
 ## Weekday
