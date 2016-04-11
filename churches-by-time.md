@@ -4,8 +4,12 @@ title: Churches by Time
 ---
 {% assign services_array = "" | split: "" %}
 {% for church in site.churches %}
-  {% assign services_array = services_array | push: church.services | push: church.title %}
   {% for service in church.services %}
+      {% assign service_array = "" | split: "" %}
+      {% assign service_array = service_array | push: church.title %}
+      {% assign service_array = service_array | push: service.day %}
+      {% assign service_array = service_array | push: service.time %}
+      {% assign services_array = services_array | push: service_array  %}
   {% endfor %}
 {% endfor %}
 {{ services_array | join: '<br>' }}
