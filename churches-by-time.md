@@ -8,4 +8,4 @@ title: Churches by Time
   {% for service in church.services %}
   {% endfor %}
 {% endfor %}
-{{ services_array }}
+{{ services_array | join: '<br>' }}
