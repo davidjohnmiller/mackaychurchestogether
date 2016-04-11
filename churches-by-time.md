@@ -6,7 +6,11 @@ title: Churches by Time
 {% for church in site.churches %}
   {% for service in church.services %}
       {% assign service_array = "" | split: "" %}
-      {% assign service_array = service_array | push: service.time | split: ':' | join %}
+      {% assign sort_time = service.time | remove: ':' | remove: 'am' | remove: 'pm' %}
+      {% if service.time contains 'pm'%}
+        {% assign sort_date = sort_date | plus: '1200' %}
+      {% endif %}
+      {% assign service_array = service_array | push: sort_time %}
       {% assign service_array = service_array | push: church.title %}
       {% assign service_array = service_array | push: service.day %}
       {% assign service_array = service_array | push: service.time %}
