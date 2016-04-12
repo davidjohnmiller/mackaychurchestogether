@@ -10,7 +10,7 @@ title: Churches by Denomination
 <h2 id="other">Other</h2>
 {% endif %}
 {% for church in denomination.items %}
-<h3>{{ church.title }}</h3>
+<h3><a href="{{ site.url }}{{ page.url}}">{{ church.title }}</a></h3>
 {% unless church.services == empty %}
 <h4>Services</h4>
 {% for service in church.services %}
