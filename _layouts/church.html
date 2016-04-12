@@ -1,8 +1,6 @@
 {% include header.html %}
 	<main>
-
 		<h1>{{ page.title }}</h1>
-		
 		<dl>
 			{% if page.denomination <> '' %}
 			<dt>Denomination</dt>
@@ -26,7 +24,6 @@
 			<dd>{{ page.office-hours | join: '<br>' }}</dd>
 			{% endif %}
 		</dl>
-
 		<dl>
 			{% if page.address <> '' %}
 			<dt>Address</dt>
@@ -49,16 +46,14 @@
 
 			{% if page.email <> '' %}
 			<dt>Email</dt>
-			<dd>{{ page.email }}</dd>
+			<dd><a href="mailto:{{ page.email }}>{{ page.email }}</a></dd>
 			{% endif %}
 
 			{% if page.website <> '' %}
 			<dt>Website</dt>
-			<dd>{{ page.website }}</dd>
+			<dd><a href="{{ page.website }}" target="_blank">{{ page.website }}</a></dd>
 			{% endif %}
 		</dl>
-
 		{{ content }}
-
 	</main>
 {% include footer.html %}
