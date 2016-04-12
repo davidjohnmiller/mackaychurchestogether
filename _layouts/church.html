@@ -6,7 +6,7 @@
 		<dl>
 			{% if page.denomination <> '' %}
 			<dt>Denomination</dt>
-			<dd>{{ page.denomination }}</dd>
+			<dd><a href="{{ site.url }}\churches-by-denomination.html#{{ page.denomination | slugify }}">{{ page.denomination }}</a></dd>
 			{% endif %}
 
 			{% if page.leader <> '' %}
