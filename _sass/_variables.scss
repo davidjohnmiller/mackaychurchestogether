@@ -31,7 +31,7 @@ $link-color: $primary;
 $link-hover-color: darken($link-color, 15%);
 
 //Font
-$sans-serif: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+$sans-serif:  Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
 $serif: Georgia, Times, 'Times New Roman', serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family: $sans-serif;
@@ -50,3 +50,4 @@ $line-height-base: 1.4;
 
 //Other
 $border: 1px solid $dividers;
+$dt-wwidth: 12em;
