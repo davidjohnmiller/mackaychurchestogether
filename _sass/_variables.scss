@@ -31,13 +31,13 @@ $link-color: $primary;
 $link-hover-color: darken($link-color, 15%);
 
 //Font
-$sans-serif:  Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
+$sans-serif:  Franklin Gothic Book, ITC Franklin Gothic, Franklin Gothic, Arial, sans-serif;
 $serif: Georgia, Times, 'Times New Roman', serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family: $sans-serif;
 
 //Typography
-$font-size-base: 16px;
+$font-size-base: 1rem;
 $font-size-large: ceil(($font-size-base * 1.25));
 $font-size-small: ceil(($font-size-base * .85));
 $font-size-h1: 36px;
@@ -46,8 +46,8 @@ $font-size-h3: 24px;
 $font-size-h4: 18px;
 $font-size-h5: $font-size-base;
 $font-size-h6: $font-size-small;
-$line-height-base: 1.4;
+$line-height-base: 1.5;
 
 //Other
 $border: 1px solid $dividers;
-$dt-wwidth: 12em;
+$dt-wwidth: 10em;
