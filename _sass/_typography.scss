@@ -99,10 +99,23 @@ a {
 
 dl {
   margin-bottom: $md-pad;
+  padding-left: 300px;
+}
+
+dt {
+  clear:both; float:left;
+  width:260px;
+  padding:10px;
+  margin:0 0 2em -300px;
+  font-weight:bold;
 }
 
 dd {
   margin-left: $xlg-pad;
+  float:left;
+  width:100%;
+  padding:10px 0;
+  margin:0 0 2em;
 }
 
 ul,
