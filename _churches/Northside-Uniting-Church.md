@@ -12,8 +12,7 @@ website: ""
 services:
   - day: "Sunday"
     time: "9:00am"
-  - desecription:
-    day: "Tuesday"
+  - day: "Tuesday"
     time: "9:30am"
 office-hours:
 coordinates: 

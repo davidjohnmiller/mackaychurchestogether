@@ -1,0 +1,15 @@
+---
+layout: default
+title: Churches
+---
+{% for church in site.churches %}
+<h2><a href="{{ site.url }}{{ church.url}}">{{ church.title }}</a></h2>
+{% unless church.services == empty %}
+<h3>Services</h3>
+{% for service in church.services %}
+<ul>
+<li>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</li>
+</ul>
+{% endfor %}
+{% endunless %}
+{% endfor %}

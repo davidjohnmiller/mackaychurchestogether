@@ -7,9 +7,8 @@ var featureLayer = L.mapbox.featureLayer()
   map.setMaxBounds(featureLayer.getBounds().pad(1));
   map.options.minZoom = map.getZoom();
   featureLayer.eachLayer(function(layer) {
-    var content = '<strong>' + layer.feature.properties.title + '</strong>'
-    + '<br>' + layer.feature.properties.description + '<br>'
-    + '<a href="' + layer.feature.properties.url + '">View details</a>';
+    var content = '<a href="' + layer.feature.properties.url + '"><strong>' + layer.feature.properties.title + '</strong></a>'
+    + '<br>' + layer.feature.properties.description;
     layer.bindPopup(content, {
       closeButton: false
     });

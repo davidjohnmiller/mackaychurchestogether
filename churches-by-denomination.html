@@ -5,17 +5,18 @@ title: Churches by Denomination
 {% assign denominations = site.churches | group_by: "denomination" | sort: "name", "last" %}
 {% for denomination in denominations %}
 {% if denomination.name <> "" %}
-## {{ denomination.name }}
+<h2 id="{{ denomination.name | slugify }}">{{ denomination.name }}</h2>
 {% else %}
-## Other
+<h2 id="other">Other</h2>
 {% endif %}
 {% for church in denomination.items %}
-### {{ church.title }}
-
+<h3><a href="{{ site.url }}{{ church.url }}">{{ church.title }}</a></h3>
 {% unless church.services == empty %}
-#### Services
+<h4>Services</h4>
 {% for service in church.services %}
-- {{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}
+<ul>
+<li>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</li>
+</ul>
 {% endfor %}
 {% endunless %}
 {% endfor %}
