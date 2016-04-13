@@ -2,6 +2,11 @@
 	<main>
 		<h1>{{ page.title }}</h1>
 		<dl>
+
+			{% if page.website <> '' %}
+			<dt>Website</dt>
+			<dd><a href="http://{{ page.website }}" target="_blank">{{ page.website }}</a></dd>
+			{% endif %}
 			{% if page.denomination <> '' %}
 			<dt>Denomination</dt>
 			<dd><a href="{{ site.url }}\churches-by-denomination.html#{{ page.denomination | slugify }}">{{ page.denomination }}</a></dd>
@@ -18,22 +23,24 @@
 			<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
 			{% endfor %}
 			{% endunless %}
-
+      </dl>
+      <h2>Contact</h2>
+		<dl>
 			{% if page.office-hours <> empty %}
 			<dt>Office Hours</dt>
-			<dd>{{ page.office-hours | join: '<br>' }}</dd>
+        {% for hours in page.office-hours %}
+			<dd>{{ hours }}</dd>
+        {% endfor %}
 			{% endif %}
-		</dl>
-		<dl>
+		
 			{% if page.address <> '' %}
 			<dt>Address</dt>
-			<dd>{{ page.address }}, {{ page.suburb }}</dd>
-			{% endif %}
-
+			<dd>{{ page.address }}, {{ page.suburb }}
 			{% if page.address-hint <> '' %}
-			<dd>({{ page.address-hint }})</dd>
+			<br>({{ page.address-hint }})
 			{% endif %}
-
+        </dd>
+        {% endif %}
 			{% if page.phone <> '' %}
 			<dt>Phone</dt>
 			<dd>{{ page.phone }}</dd>
@@ -49,10 +56,6 @@
 			<dd><a href="mailto:{{ page.email }}">{{ page.email }}</a></dd>
 			{% endif %}
 
-			{% if page.website <> '' %}
-			<dt>Website</dt>
-			<dd><a href="http://{{ page.website }}" target="_blank">{{ page.website }}</a></dd>
-			{% endif %}
 		</dl>
 		{{ content }}
 	</main>
