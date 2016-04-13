@@ -105,18 +105,17 @@ dl {
 dt {
   clear: both;
   float: left;
-  width: dt-wwidth;
+  width: ($dt-wwidth - 1em);
   padding: 0;
   margin-left: (-$dt-wwidth);
+  margin-bottom: 1em;
   font-weight: bold;
 }
 
 dd {
-  margin-left: $xlg-pad;
   float: left;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 1em;
 }
 
 ul,
