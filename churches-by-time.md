@@ -51,7 +51,7 @@ title: Churches by Time
       <h2>Wednesday</h2>
       <dl>
     {% endif %}
-      <dt>{{ service[3] }} {{ service[4] }}</dt>
+      <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
     {% if forloop.last %}
       </dl>
@@ -64,7 +64,7 @@ title: Churches by Time
       <h2>Tuesday</h2>
       <dl>
     {% endif %}
-      <dt>{{ service[3] }} {{ service[4] }}</dt>
+      <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
     {% if forloop.last %}
       </dl>
