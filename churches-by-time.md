@@ -13,32 +13,41 @@ title: Churches by Time
       {% assign sort_time = sort_time | prepend: '0' | slice: -4, 4 %}
       {% assign service_array = service_array | push: sort_time %}
       {% assign service_array = service_array | push: church.title %}
+      {% assign service_array = service_array | push: church.url %}
       {% assign service_array = service_array | push: service.day %}
       {% assign service_array = service_array | push: service.time %}
       {% assign services_array = services_array | push: service_array  %}
   {% endfor %}
 {% endfor %}
 {% assign services_array = services_array | sort %}
-## Sunday
-
+{% assign previous_time = "" %}
+<h2>Sunday</h2>
 {% for service in services_array %}
   {% if service contains 'Sunday' %}
-{{ service[3] }} {{ service[1] }}
+    {% unless service[4] == previous_time %}
+      <dt>{{ service[4] }}</dt>
+    {% endunless %}
+    <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
+    {% assign previous_time = service[4] }
   {% endif %}
 {% endfor %}
 
-## Saturday
-
+<h2>Saturday</h2>
 {% for service in services_array %}
   {% if service contains 'Saturday' %}
-{{ service[3] }} {{ service[1] }}
+    {% unless service[4] == previous_time %}
+      <dt>{{ service[4] }}</dt>
+    {% endunless %}
+    <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
+    {% assign previous_time = service[4] }
   {% endif %}
 {% endfor %}
 
-## Weekday
-
+<h2>Weekday</h2>
 {% for service in services_array %}
   {% unless service contains 'Sunday' or service contains 'Saturday' %}
-{{ service[2] }} {{ service[3] }} {{ service[1] }}
+    <dt>{{ service[3] }} {{ service[4] }}</dt>
+    <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
+    {% assign previous_time = service[4] }
   {% endunless %}
 {% endfor %}
