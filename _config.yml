@@ -27,8 +27,6 @@ defaults:
     values:
       layout: "church"
       denomination: "Other"
-      serivces: []
-      office-hours: []
 
 gems:
   - jekyll-redirect-from
