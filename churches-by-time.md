@@ -47,6 +47,7 @@ title: Churches by Time
 </dl>
 {% for service in services_array %}
   {% assign first = forloop.first %}
+  {% assign last = forloop.last %}
   {% if service contains 'Wednesday' %}
     {% if first %}
       <h2>Wednesday</h2>
@@ -54,13 +55,14 @@ title: Churches by Time
     {% endif %}
       <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
-    {% if forloop.last %}
+    {% if last %}
       </dl>
     {% endif %}
   {% endif %}
 {% endfor %}
 {% for service in services_array %}
   {% assign first = forloop.first %}
+  {% assign last = forloop.last %}
   {% if service contains 'Tuesday' %}
     {% if first %}
       <h2>Tuesday</h2>
@@ -68,7 +70,7 @@ title: Churches by Time
     {% endif %}
       <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
-    {% if forloop.last %}
+    {% if last %}
       </dl>
     {% endif %}
   {% endif %}
