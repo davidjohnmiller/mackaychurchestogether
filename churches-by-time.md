@@ -22,6 +22,7 @@ title: Churches by Time
 {% assign services_array = services_array | sort %}
 {% assign previous_time = "" %}
 <h2>Sunday</h2>
+<dl>
 {% for service in services_array %}
   {% if service contains 'Sunday' %}
     {% unless service[4] == previous_time %}
@@ -31,8 +32,9 @@ title: Churches by Time
     {% assign previous_time = service[4] %}
   {% endif %}
 {% endfor %}
-
+</dl>
 <h2>Saturday</h2>
+<dl>
 {% for service in services_array %}
   {% if service contains 'Saturday' %}
     {% unless service[4] == previous_time %}
@@ -42,11 +44,13 @@ title: Churches by Time
     {% assign previous_time = service[4] %}
   {% endif %}
 {% endfor %}
-
+</dl>
 <h2>Weekday</h2>
+<dl>
 {% for service in services_array %}
   {% unless service contains 'Sunday' or service contains 'Saturday' %}
     <dt>{{ service[3] }} {{ service[4] }}</dt>
     <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
   {% endunless %}
 {% endfor %}
+</dl>
