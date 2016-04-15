@@ -28,7 +28,7 @@ title: Churches by Time
       <dt>{{ service[4] }}</dt>
     {% endunless %}
     <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
-    {% assign previous_time = service[4] }
+    {% assign previous_time = service[4] %}
   {% endif %}
 {% endfor %}
 
@@ -39,7 +39,7 @@ title: Churches by Time
       <dt>{{ service[4] }}</dt>
     {% endunless %}
     <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
-    {% assign previous_time = service[4] }
+    {% assign previous_time = service[4] %}
   {% endif %}
 {% endfor %}
 
@@ -48,6 +48,5 @@ title: Churches by Time
   {% unless service contains 'Sunday' or service contains 'Saturday' %}
     <dt>{{ service[3] }} {{ service[4] }}</dt>
     <dd><a href="{{ site.url }}{{ church.url }}">{{ service[1] }}</a></dd>
-    {% assign previous_time = service[4] }
   {% endunless %}
 {% endfor %}
