@@ -11,13 +11,14 @@ title: Churches by Denomination
 {% endif %}
 {% for church in denomination.items %}
 <h3><a href="{{ site.url }}{{ church.url }}">{{ church.title }}</a></h3>
+{{ church.address }}
 {% unless church.services == empty %}
-<h4>Services</h4>
+<dl>
+<dt>Services</dt>
 {% for service in church.services %}
-<ul>
-<li>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</li>
-</ul>
+<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
 {% endfor %}
+</dl>
 {% endunless %}
 {% endfor %}
 {% endfor %}
