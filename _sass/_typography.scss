@@ -101,15 +101,15 @@ a {
 
 dl {
   margin-bottom: $md-pad;
-  padding-left: $dt-wwidth;
+  padding-left: $dt-width;
 }
 
 dt {
   clear: both;
   float: left;
-  width: ($dt-wwidth - 1em);
+  width: ($dt-width - 1em);
   padding: 0;
-  margin-left: (-$dt-wwidth);
+  margin-left: (-$dt-width);
   margin-bottom: 1em;
   font-weight: bold;
 }
