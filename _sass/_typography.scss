@@ -7,7 +7,7 @@ body {
 
 p {
   margin: 0;
-  margin-bottom: $md-pad;
+  margin-top: $md-pad;
 }
 
 h1,
@@ -24,40 +24,40 @@ h6 {
 h1 {
   font-size: $font-size-h1;
   font-weight: normal;
-  margin: $lg-pad 0 $md-pad;
+  margin-top: $md-pad;
 }
 
 h2 {
   font-size: $font-size-h2;
   font-weight: bold;
-  margin: $lg-pad 0 $md-pad;
+  margin-top: $md-pad;
 }
 
 h3 {
   font-size: $font-size-h3;
   font-weight: normal;
-  margin: $md-pad 0 $xs-pad;
+  margin-top: $md-pad;
 }
 
 h4 {
   font-size: $font-size-h4;
   font-weight: bold;
-  margin: $md-pad 0 $xs-pad;
+  margin-top: $md-pad;
 }
 
 h5 {
   color: $secondary;
   font-size: $font-size-h5;
   font-weight: normal;
-  margin: $md-pad 0 $xs-pad;
+  margin-top: $md-pad;
 }
 
 h6 {
   color: $secondary;
-  font-style: italic;
   font-size: $font-size-h6;
-  font-weight: bold;
-  margin: $md-pad 0 $xs-pad;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: $md-pad;
 }
 
 small {
