@@ -1,7 +1,15 @@
 ---
 layout: default
-title: Mackay Churches Together
+title: Welcome
 ---
-<div id="map" style="height: 50vh;"></div>
+<div id="map" style="height: 30em; max-height: 50vh;"></div>
 <script type="text/javascript" src="https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js"></script>
 <script type="text/javascript" src="{{ site.url }}/javascripts/map.js"></script>
+<h2>Posts</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

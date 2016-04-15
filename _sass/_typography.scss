@@ -30,7 +30,7 @@ h1 {
 
 h2 {
   font-size: $font-size-h2;
-  font-weight: normal;
+  font-weight: bold;
   margin: $lg-pad 0 $md-pad;
 }
 
@@ -49,7 +49,7 @@ h4 {
 h5 {
   color: $secondary;
   font-size: $font-size-h5;
-  font-weight: bold;
+  font-weight: normal;
   margin: $md-pad 0 $xs-pad;
 }
 
@@ -57,7 +57,7 @@ h6 {
   color: $secondary;
   font-style: italic;
   font-size: $font-size-h6;
-  font-weight: normal;
+  font-weight: bold;
   margin: $md-pad 0 $xs-pad;
 }
 
@@ -118,6 +118,7 @@ dd {
   float: left;
   width: 100%;
   margin-bottom: 1em;
+  overflow-wrap: break-word;
 }
 
 ul,
