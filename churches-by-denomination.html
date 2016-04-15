@@ -12,7 +12,7 @@ title: Churches by Denomination
 {% for church in denomination.items %}
 <h3><a href="{{ site.url }}{{ church.url }}">{{ church.title }}</a></h3>
 {{ church.address }}
-{% unless church.services == empty or church.services == "" %}
+{% unless church.services == empty or church.services == "" or church.services == null %}
 <dl>
 <dt>Services</dt>
 {% for service in church.services %}
