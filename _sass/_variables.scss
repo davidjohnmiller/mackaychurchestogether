@@ -1,15 +1,6 @@
-//Basic stylings
-$br: ($font-size-base * 0.25);
-$xs-pad: ($font-size-base * 0.25);
-$sm-pad: ($font-size-base * 0.5);
-$md-pad: $font-size-base;
-$lg-pad: ($font-size-base * 1.5);
-$xlg-pad: ($font-size-base * 2);
-$trans: .3s;
-
 //Breakpoints
-$small-breakpoint: 400px;
-$large-breakpoint: 768px;
+$small-breakpoint: 20em;
+$large-breakpoint: 48em;
 
 //Colors
 $primary: #2196f3;
@@ -47,6 +38,15 @@ $font-size-h3: ($font-size-base * 1.50);
 $font-size-h4: ($font-size-base * 1.00);
 $font-size-h5: ($font-size-base * 1.00);
 $font-size-h6: ($font-size-base * 1.00);
+
+//Basic stylings
+$br: ($font-size-base * 0.25);
+$xs-pad: ($font-size-base * 0.25);
+$sm-pad: ($font-size-base * 0.5);
+$md-pad: $font-size-base;
+$lg-pad: ($font-size-base * 1.5);
+$xlg-pad: ($font-size-base * 2);
+$trans: .3s;
 
 //Other
 $border: 1px solid $dividers;
