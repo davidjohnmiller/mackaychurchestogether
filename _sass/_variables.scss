@@ -1,10 +1,10 @@
 //Basic stylings
-$br: 4px;
-$xs-pad: 4px;
-$sm-pad: 8px;
-$md-pad: 16px;
-$lg-pad: 20px;
-$xlg-pad: 40px;
+$br: ($font-size-base * 0.25);
+$xs-pad: ($font-size-base * 0.25);
+$sm-pad: ($font-size-base * 0.5);
+$md-pad: $font-size-base;
+$lg-pad: ($font-size-base * 1.5);
+$xlg-pad: ($font-size-base * 2);
 $trans: .3s;
 
 //Breakpoints
@@ -31,13 +31,13 @@ $link-color: $primary;
 $link-hover-color: darken($link-color, 15%);
 
 //Font
-$sans-serif:  Franklin Gothic Book, ITC Franklin Gothic, Franklin Gothic, Arial, sans-serif;
+$sans-serif: 'Franklin Gothic Book', 'ITC Franklin Gothic', 'Franklin Gothic', Arial, sans-serif;
 $serif: Georgia, Times, 'Times New Roman', serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family: $sans-serif;
 
 //Typography
-$font-size-base: 1rem;
+$font-size-base: 1em;
 $font-size-large: ($font-size-base * 1.25);
 $font-size-small: ($font-size-base * .75);
 $font-size-h1: ($font-size-base * 2.75);

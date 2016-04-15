@@ -93,9 +93,12 @@ a {
 
   &:hover,
   &:focus {
-    color: $primary;
-    text-decoration: underline;
+    color: $link-hover-color;
   }
+}
+
+p a {
+  text-decoration: underline;
 }
 
 dl {
