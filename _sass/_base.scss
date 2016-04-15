@@ -17,6 +17,12 @@ body {
   max-width: 30em;
 }
 
+header {
+  border-bottom: $border;
+  position: fixed;
+  top: 0px;
+}
+
 main {
   display: block;
   padding: 0 $md-pad $md-pad;
