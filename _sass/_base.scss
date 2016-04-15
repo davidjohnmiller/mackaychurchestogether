@@ -19,6 +19,7 @@ body {
 
 header {
   border-bottom: $border;
+  padding: 0 $md-pad;
 }
 
 main {
@@ -32,7 +33,7 @@ footer {
   display: inline-block;
   float: left;
   max-width: 100%;
-  padding: $md-pad 0;
+  padding: $md-pad;
   text-align: center;
 
   p {
