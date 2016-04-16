@@ -106,6 +106,10 @@ dt {
   padding: 0;
   margin-left: (-$dt-width);
   font-weight: bold;
+
+  & + dd {
+    margin-top: 1.5em;
+  }
 }
 
 dd {
