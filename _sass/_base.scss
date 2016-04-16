@@ -1,3 +1,4 @@
+body,
 main,
 header,
 footer,
@@ -7,13 +8,14 @@ aside,
 details,
 summary {
   margin: 0 auto;
-  margin-bottom: $md-pad;
   width: 100%;
 }
 
+* + * {
+  margin-top: 1.5em;
+}
+
 body {
-  margin: 0 auto;
-  width: 100%;
   max-width: 30em;
 }
 
@@ -23,8 +25,7 @@ header {
 }
 
 main {
-  display: block;
-  padding: 0 $md-pad $md-pad;
+  padding: 0 $md-pad;
 }
 
 footer {
@@ -32,19 +33,13 @@ footer {
   clear: both;
   display: inline-block;
   float: left;
-  max-width: 100%;
-  padding: $md-pad;
+  padding: 0 $md-pad;
   text-align: center;
-
-  p {
-    margin-bottom: 0;
-  }
 }
 
 hr {
   border-top: $border;
   display: block;
-  margin-bottom: $md-pad;
   width: 100%;
 }
 
