@@ -17,21 +17,21 @@
 			<dd>{{ page.leader }}</dd>
 			{% endif %}
 
-			{% unless page.services == empty %}
-			<dt>Service Times</dt>
-			{% for service in page.services %}
-			<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
-			{% endfor %}
+			{% unless page.services == empty or page.services == "" or page.services == null %}
+				<dt>Service Times</dt>
+				{% for service in page.services %}
+				<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
+				{% endfor %}
 			{% endunless %}
-      </dl>
-      <h2>Contact</h2>
+		</dl>
+		<h2>Contact</h2>
 		<dl>
-			{% if page.office-hours <> empty %}
+			{% unless page.office-hours == empty or page.office-hours == "" or page.office-hours == null %}
 			<dt>Office Hours</dt>
-        {% for hours in page.office-hours %}
-			<dd>{{ hours }}</dd>
-        {% endfor %}
-			{% endif %}
+				{% for hours in page.office-hours %}
+					<dd>{{ hours }}</dd>
+				{% endfor %}
+			{% endunless %}
 		
 			{% if page.address <> '' %}
 			<dt>Address</dt>
@@ -39,8 +39,8 @@
 			{% if page.address-hint <> '' %}
 			<br>({{ page.address-hint }})
 			{% endif %}
-        </dd>
-        {% endif %}
+		</dd>
+		{% endif %}
 			{% if page.phone <> '' %}
 			<dt>Phone</dt>
 			<dd>{{ page.phone }}</dd>
