@@ -25,16 +25,16 @@ h1 {
   font-size: $font-size-h1;
   font-weight: normal;
   margin-top: $md-pad;
+
+  & + h2 {
+    margin-top: $mg-pad;
+  }
 }
 
 h2 {
   font-size: $font-size-h2;
   font-weight: bold;
   margin-top: $lg-pad;
-}
-
-h1 + h2 {
-  margin-top: $mg-pad;
 }
 
 h3 {
