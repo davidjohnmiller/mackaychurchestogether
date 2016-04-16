@@ -106,8 +106,13 @@ p a {
 }
 
 dl {
-  margin-top: $md-pad;
   padding-left: $dt-width;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 dt {
