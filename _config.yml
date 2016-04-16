@@ -3,6 +3,15 @@ url: "http://davidjohnmiller.github.io/mackaychurchestogether"
 timezone: Australia/Brisbane
 branch: gh-pages
 
+weekdays:
+  - "Monday"
+  - "Tuesday"
+  - "Wednesday"
+  - "Thursday"
+  - "Friday"
+  - "Saturday"
+  - "Sunday"
+
 collections:
   churches:
     output: true
