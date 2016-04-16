@@ -50,15 +50,15 @@ title: Churches by Time
   {% if service contains 'Wednesday' %}
     {% if first %}
       {% assign first = false %}
-      <h2>Wednesday</h2>
-      <dl>
+<h2>Wednesday</h2>
+<dl>
     {% endif %}
       <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
   {% endif %}
 {% endfor %}
 {% unless first %}
-  </dl>
+</dl>
 {% endunless %}
 {% assign first = true %}
 {% for service in services_array %}
