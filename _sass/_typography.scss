@@ -30,7 +30,11 @@ h1 {
 h2 {
   font-size: $font-size-h2;
   font-weight: bold;
-  margin-top: $md-pad;
+  margin-top: $lg-pad;
+}
+
+h1 + h2 {
+  margin-top: $mg-pad
 }
 
 h3 {
@@ -102,7 +106,7 @@ p a {
 }
 
 dl {
-  margin-bottom: $md-pad;
+  margin-top: $md-pad;
   padding-left: $dt-width;
 }
 
@@ -112,14 +116,14 @@ dt {
   width: ($dt-width - 1em);
   padding: 0;
   margin-left: (-$dt-width);
-  margin-bottom: 1em;
+  margin-top: $md-pad;
   font-weight: bold;
 }
 
 dd {
   float: left;
   width: 100%;
-  margin-bottom: 1em;
+  margin-top: $md-pad;
   overflow-wrap: break-word;
 }
 
