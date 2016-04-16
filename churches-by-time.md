@@ -45,33 +45,33 @@ title: Churches by Time
   {% endif %}
 {% endfor %}
 </dl>
+{% assign first = true %}
 {% for service in services_array %}
-  {% assign first = forloop.first %}
-  {% assign last = forloop.last %}
   {% if service contains 'Wednesday' %}
     {% if first %}
+      {% assign first = false %}
       <h2>Wednesday</h2>
       <dl>
     {% endif %}
       <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
-    {% if last %}
-      </dl>
-    {% endif %}
   {% endif %}
 {% endfor %}
+{% unless first %}
+  </dl>
+{% endunless %}
+{% assign first = true %}
 {% for service in services_array %}
-  {% assign first = forloop.first %}
-  {% assign last = forloop.last %}
   {% if service contains 'Tuesday' %}
     {% if first %}
+      {% assign first = false %}
       <h2>Tuesday</h2>
       <dl>
     {% endif %}
       <dt>{{ service[4] }}</dt>
       <dd><a href="{{ site.url }}{{ service[2] }}">{{ service[1] }}</a></dd>
-    {% if last %}
-      </dl>
-    {% endif %}
   {% endif %}
 {% endfor %}
+{% unless first %}
+  </dl>
+{% endunless %}
