@@ -1,24 +1,23 @@
 ---
-layout: default
 title: Churches by Denomination
 ---
 {% assign denominations = site.churches | group_by: "denomination" | sort: "name", "last" %}
 {% for denomination in denominations %}
-{% if denomination.name <> "" %}
-<h2 id="{{ denomination.name | slugify }}">{{ denomination.name }}</h2>
-{% else %}
-<h2 id="other">Other</h2>
-{% endif %}
-{% for church in denomination.items %}
-<h3><a href="{{ site.url }}{{ church.url }}">{{ church.title }}</a></h3>
-{{ church.address }}
-{% unless church.services == empty or church.services == "" or church.services == null %}
-<dl>
-<dt>Services</dt>
-{% for service in church.services %}
-<dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
-{% endfor %}
-</dl>
-{% endunless %}
-{% endfor %}
+  {% if denomination.name <> "" %}
+    <h2 id="{{ denomination.name | slugify }}">{{ denomination.name }}</h2>
+  {% else %}
+    <h2 id="other">Other</h2>
+  {% endif %}
+  {% for church in denomination.items %}
+    <h3><a href="{{ site.url }}{{ church.url }}">{{ church.title }}</a></h3>
+    {% if church.address != "" %}<p>{{ church.address }}{% if church.suburb != "" %}, {{ church.suburb }}{% endif %}</p>{% endif %}
+    {% unless church.services == empty or church.services == "" or church.services == null %}
+      <dl>
+      <dt>Services</dt>
+      {% for service in church.services %}
+        <dd>{{ service.day }} {{ service.time }} {% if service.description %}({{ service.description }}){% endif %}</dd>
+      {% endfor %}
+      </dl>
+    {% endunless %}
+  {% endfor %}
 {% endfor %}
