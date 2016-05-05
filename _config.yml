@@ -1,7 +1,7 @@
 name: Mackay Churches Together
-url: "http://davidjohnmiller.github.io/mackaychurchestogether"
+url: "http://mackaychurchestogether.github.io"
 timezone: Australia/Brisbane
-branch: gh-pages
+branch: master
 
 weekdays:
   - "Monday"
